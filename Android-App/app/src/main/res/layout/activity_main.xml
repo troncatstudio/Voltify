@@ -19,11 +19,15 @@
             android:gravity="center_vertical"
             android:layout_marginBottom="16dp">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/am"></ImageView>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Power Controller"
+                android:text="Voltify"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#333" />
@@ -58,15 +62,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginEnd="4dp"
+                android:layout_marginEnd="11dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="12dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -79,28 +83,41 @@
                         android:id="@+id/outputVoltText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/pp"
                         android:text="0.000 V"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#333"
-                        android:layout_marginTop="4dp" />
+                        android:textColor="#31A0DB"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
 
-                    <TextView
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="#F2F2F2" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Set Voltage"
-                        android:textSize="12sp"
-                        android:textColor="#666"
-                        android:layout_marginTop="8dp" />
+                        android:orientation="horizontal"
+                        android:padding="1dp">
 
-                    <TextView
-                        android:id="@+id/setVoltText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="0.00 V"
-                        android:textSize="14sp"
-                        android:textColor="#333" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Set Volt: "
+                            android:textColor="#666"
+                            android:textSize="14sp" />
 
+                        <TextView
+                            android:id="@+id/setVoltText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00 V"
+                            android:textColor="#333"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -110,15 +127,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="12dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -132,27 +150,39 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="0.000 A"
-                        android:textSize="18sp"
+                        android:fontFamily="@font/pp"
+                        android:textSize="28sp"
                         android:textStyle="bold"
-                        android:textColor="#333"
+                        android:textColor="#31A0DB"
                         android:layout_marginTop="4dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="#F2F2F2" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Set Current"
-                        android:textSize="12sp"
-                        android:textColor="#666"
-                        android:layout_marginTop="8dp" />
+                        android:orientation="horizontal"
+                        android:padding="1dp">
 
-                    <TextView
-                        android:id="@+id/setAmpText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="0.00 A"
-                        android:textSize="14sp"
-                        android:textColor="#333" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Set Amp: "
+                            android:textColor="#666"
+                            android:textSize="14sp" />
 
+                        <TextView
+                            android:id="@+id/setAmpText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00 A"
+                            android:textColor="#333"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -171,15 +201,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginEnd="4dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp"
+                    android:padding="12dp"
                     android:gravity="center">
 
                     <TextView
@@ -194,12 +225,13 @@
                         android:id="@+id/outputPowerText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="0.000 W"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#333"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/pp"
                         android:gravity="center"
-                        android:layout_marginTop="4dp" />
+                        android:text="0.000 W"
+                        android:textColor="#4CAF50"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -210,15 +242,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp"
+                    android:padding="12dp"
                     android:gravity="center">
 
                     <TextView
@@ -233,12 +267,13 @@
                         android:id="@+id/outputEnergyText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="0.00 Wh"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#333"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/pp"
                         android:gravity="center"
-                        android:layout_marginTop="4dp" />
+                        android:text="0.00 Wh"
+                        android:textColor="#FF9800"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -249,7 +284,7 @@
         <!-- Big Flip Card Container -->
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp">
 
             <!-- Front Card (Sliders) -->
@@ -258,6 +293,7 @@
                 android:id="@+id/frontCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="8dp">
 
@@ -272,7 +308,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
                         android:gravity="center"
-                        android:text="Power Settings"
+                        android:text="Output Settings"
+                        android:textColor="#424647"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -280,7 +317,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginBottom="9dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
@@ -308,15 +345,17 @@
                         android:id="@+id/setVoltSlider"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginBottom="10dp"
                         android:max="2800"
-                        android:progress="0" />
+                        android:progress="0"
+                        android:progressTint="#2196F3"
+                        android:thumbTint="#2196F3" />
 
                     <!-- Set Current Slider -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginBottom="9dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
@@ -334,7 +373,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:text="0.00 A"
-                            android:textColor="#2196F3"
+                            android:textColor="#FF9800"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -344,15 +383,17 @@
                         android:id="@+id/setAmpSlider"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginBottom="10dp"
                         android:max="1450"
-                        android:progress="0" />
+                        android:progress="0"
+                        android:progressTint="#FF9800"
+                        android:thumbTint="#FF9800" />
 
                     <!-- Max Voltage Slider -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginBottom="9dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
@@ -370,7 +411,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:text="0.00 V"
-                            android:textColor="#FF9800"
+                            android:textColor="#9C27B0"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -380,15 +421,17 @@
                         android:id="@+id/maxVoltSlider"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginBottom="10dp"
                         android:max="2700"
-                        android:progress="0" />
+                        android:progress="0"
+                        android:progressTint="#9C27B0"
+                        android:thumbTint="#9C27B0" />
 
                     <!-- Max Current Slider -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="24dp"
+                        android:layout_marginBottom="9dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
@@ -406,7 +449,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:text="0.00 A"
-                            android:textColor="#FF9800"
+                            android:textColor="#E91E63"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -416,9 +459,11 @@
                         android:id="@+id/maxAmpSlider"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginBottom="10dp"
                         android:max="1400"
-                        android:progress="0" />
+                        android:progress="0"
+                        android:progressTint="#E91E63"
+                        android:thumbTint="#E91E63" />
 
                     <!-- Send Button -->
                     <Button
@@ -427,18 +472,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:backgroundTint="#4CAF50"
-                        android:text="SEND TO ESP32"
+                        android:text="Set Output"
                         android:textSize="16sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Adjust sliders and press Send to update ESP32"
-                        android:textColor="#666"
-                        android:textSize="12sp" />
-
                 </LinearLayout>
 
 
@@ -463,15 +499,21 @@
                         android:id="@+id/voltChart"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginBottom="4dp" />
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="#F2F2F2" />
 
                     <com.github.mikephil.charting.charts.LineChart
                         android:id="@+id/ampChart"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginTop="4dp" />
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1" />
 
                 </LinearLayout>
 
@@ -485,60 +527,69 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Show Graphs"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Memory Presets"
+            android:textColor="#5B5858"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <!-- Memory Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="2dp">
 
             <Button
                 android:id="@+id/memory1"
+                style="@style/Mbut"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="M1"
-                android:layout_marginEnd="4dp" />
+                android:text="M1" />
 
             <Button
                 android:id="@+id/memory2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="M2"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp" />
+                style="@style/Mbut"/>
 
             <Button
                 android:id="@+id/memory3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="M3"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp" />
+                style="@style/Mbut" />
 
             <Button
                 android:id="@+id/memory4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="M4"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp" />
+                style="@style/Mbut" />
 
             <Button
                 android:id="@+id/memory5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="M5"
-                android:layout_marginStart="4dp" />
+                style="@style/Mbut"/>
 
         </LinearLayout>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Long Press to Store | Short Press to Recall"
+            android:textColor="#5B5858"
+            android:textSize="10sp"/>
         <!-- Status Cards -->
         <LinearLayout
             android:layout_width="match_parent"

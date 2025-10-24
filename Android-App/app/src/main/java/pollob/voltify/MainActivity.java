@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity implements BLEService.BLELis
     private void sendSliderDataToESP32() {
         if (bleService != null && bleService.isConnected()) {
             bleService.sendData(currentSetVolt, currentSetAmp, currentMaxVolt, currentMaxAmp, isOutputOn);
-            Toast.makeText(this, "Settings sent to ESP32", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Settings send", Toast.LENGTH_SHORT).show();
 
             // Log sent data
             Log.d("SLIDER_DATA", String.format(
@@ -369,7 +369,7 @@ public class MainActivity extends AppCompatActivity implements BLEService.BLELis
                     isOutputOn ? "ON" : "OFF"
             ));
         } else {
-            Toast.makeText(this, "Not connected to ESP32", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Not connected to Device", Toast.LENGTH_SHORT).show();
         }
     }
 
