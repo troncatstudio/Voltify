@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Mbut"
+    parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/M_but</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+
+</resources>
